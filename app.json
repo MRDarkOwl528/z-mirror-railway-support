@@ -1,0 +1,24 @@
+{
+    "name": "PROFESSOR-BOT",
+    "description": "the telegram Autofilter bot",
+    "logo": "https://graph.org/file/b7e8484f6395a180b6380.jpg",
+    "keywords": ["telegram", "auto-filter"],
+    "stack": "container",
+    "website": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "env": {
+        "RemoveBG_API": {
+            "description": "background remover website api key. get from https://www.remove.bg/b/background-removal-api",
+            "required": false 
+        },
+        "P_TTI_SHOW_OFF": { 
+            "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
+            "value": "True",
+            "required": false
+        }
+    },
+    "buildpacks":
+        [
+            {"url": "heroku/python"}
+        ]      
+}
